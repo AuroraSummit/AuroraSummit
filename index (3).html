@@ -47,5 +47,18 @@
       >恢复愉悦心情!(不适用于所有人doge)
     </p>
     <div style="text-align: center"><a href="index.html">返回网页</a></div>
+    <div style="text-align: center">喜欢本网站的朋友可以给我点个小小的赞!</div>
+    <div style="text-align: center">
+      <button id="dzs" onclick="dianZan()">0</button>
+      <script>
+        function dianZan() {
+          let dianZanShuBiaoQian = window.document.getElementById("dzs");
+          let dianZanShu = parseInt(dianZanShuBiaoQian.innerText);
+          let xinShuZi = dianZanShu + 1;
+          dianZanShuBiaoQian.innerText = xinShuZi;
+          return;
+        }
+      </script>
+    </div>
   </body>
 </html>
