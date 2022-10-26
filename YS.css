@@ -1,9 +1,11 @@
 body {
   margin: 0;
   height: 100vh;
-  background-image: url("https://s3.328888.xyz/2022/08/15/hbSS7.jpg");
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-color: #eee;
+  background-image: url(https://s1.ax1x.com/2022/10/16/xBVkex.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* *{
@@ -52,13 +54,13 @@ a {
   color: rgb(86, 187, 255);
 }
 .daohang:hover {
-  background: rgba(135, 206, 250, 0.445);
+  background: rgba(135, 240, 250, 0.484);
   font-size: 20px;
 }
 .daohang {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(16, 183, 255, 0.3);
+  border-bottom: 1px solid rgba(36, 101, 129, 0.3);
   font-size: 17px;
 }
 .daohang a {
