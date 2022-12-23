@@ -1,18 +1,24 @@
+/*主体框架设计*/
 body {
   margin: 0;
-
   height: 100vh;
   background-color: #eee;
   background-image: url(https://s1.ax1x.com/2022/10/16/xBVkex.png);
   background-position: center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 /*{
   border: 1px solid black;
 }*/
+/*阴影*/
 .yinying {
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
     rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 1px 3px 0px;
+}
+a:hover {
+  text-decoration: none;
+  color: #0decfc;
 }
 .baise {
   background-color: rgba(0, 0, 0, 0.233);
@@ -42,7 +48,7 @@ body {
   margin: 7px;
 }
 .mgr8 {
-  margin-right: 7px;
+  margin-right: 10px;
 }
 .mgt8 {
   margin-top: 7px;
@@ -50,7 +56,7 @@ body {
 a {
   transition: font-size 0.5s;
   text-decoration: none;
-  color: rgb(86, 187, 255);
+  color: rgba(0, 255, 255, 0.792);
 }
 .daohang:hover {
   background: rgba(135, 240, 250, 0.484);
@@ -121,8 +127,7 @@ a {
   margin: 5px auto;
 }
 
-#emotion1,
-#emotion2 {
+#emotion1 #emotion2 {
   color: rgb(235, 241, 255);
   font-size: 55px !important;
 }
@@ -379,4 +384,10 @@ ul.bj li {
 
   width: 0%;
   transition: width 0.1s linear;
+}
+a:link {
+  color: #eee;
+}
+a:hover {
+  color: #0decfc;
 }
