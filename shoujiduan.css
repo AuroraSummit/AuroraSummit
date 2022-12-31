@@ -1,89 +1,115 @@
 body {
   margin: 0;
+  /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
   height: 100vh;
-  background-size: 100%100%;
-  background-attachment: fixed;
   background-color: #eee;
   background-image: url(https://s1.ax1x.com/2022/10/16/xBVkex.png);
-  background-position: center center;
-  background-repeat: no-repeat;
 }
-
-.yinying {
-  box-shadow: rgb(0 0 0/20%) 0px 2px 1px-1px, rgb(0 0 0/14%) 0px 1px 1px 0px,
-    rgb(0 0 0/12%) 1px 3px 0px;
-}
-
-.baise {
-  background-color: rgba(0, 0, 0, 0.233);
-}
-
+/* * {
+        border: 1px solid #333;
+      } */
 .flex {
   display: flex;
 }
-
+/* 占满比例 */
 .flex1 {
   flex: 1;
-  background-color: rgba(0, 0, 0, 0);
 }
-
-.flex2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 50px;
-  color: antiquewhite;
-}
-
-.flex3 {
-  flex: 1;
-}
-
+/* 竖向 */
 .column {
   flex-direction: column;
 }
-
+/* 阴影 */
+.yinYing {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+/* 白色背景 */
+.baiSe {
+  background-color: #fff;
+}
+/* 上下左右外边距 */
 .mg8 {
-  margin: 7px;
+  margin: 8px;
 }
-
+/* 右外边距 */
 .mgr8 {
-  margin-right: 7px;
+  margin-right: 8px;
 }
-
+/* 上外边距 */
 .mgt8 {
-  margin-top: 7px;
+  margin-top: 8px;
 }
-
-a {
-  transition: font-size 0.5s;
-  text-decoration: none;
-  color: rgb(86, 187, 255);
+/* 四个小盒子 */
+.shuJu {
+  height: 150px;
 }
-
-.daohang:hover {
-  background: rgba(135, 206, 250, 0.445);
-  font-size: 17px;
+/* 中间的大盒子 */
+.lieBiaoXiang {
+  height: 160px;
 }
-
-.daohang {
-  border-bottom: 1px solid rgba(16, 183, 255, 0.3);
-  font-size: 15px;
-  color: rgb(0, 0, 0);
-}
-
-.daohang a {
-  display: flex;
-  justify-content: center;
+/* 导航条 */
+.daoHang {
   padding: 10px 20px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  font-size: 14px;
+  color: #666;
+}
+.neiRong::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
 }
 
-.zt {
-  font-family: serif;
-  text-shadow: 4px 4px 10px rgb(255, 255, 255);
+/* 当屏幕宽度小于600px时要改变的css */
+@media (max-width: 600px) {
+  /* 小屏幕上取消侧边栏，后面学js时会教怎么弹出 */
+  .ceBian {
+    display: none;
+  }
+  /* 内容栏和数据栏flex方向改为竖向 */
+  .neiRong {
+    flex-direction: column;
+  }
+  .shuJuQu {
+    flex-direction: column;
+  }
+  /* 右区加左外边距 */
+  .youQu {
+    margin-left: 8px;
+  }
+  /* 数据块外边距，大小改为自动宽高 */
+  .shuJu {
+    margin: 0 0 8px;
+    flex: auto;
+  }
 }
-
-.juzhong {
-  display: flex;
-  align-items: center;
+a {
+  text-decoration: none;
+}
+a:hover {
+  box-shadow: 0px 3px 20px;
+  height: 45px;
+  transition: 0.5s;
+  background-image: linear-gradient(230deg, #5096ff, #8d9eff, #b6a8ff, #f0c1ff);
+}
+li:hover {
+  box-shadow: 0px 3px 20px;
+  height: 45px;
+  transition: 0.5s;
+  background-image: linear-gradient(230deg, #5096ff, #8d9eff, #b6a8ff, #f0c1ff);
+}
+a:link {
+  color: paleturquoise;
+}
+#emotion1 #emotion2 {
+  color: rgb(235, 241, 255);
+  font-size: 55px !important;
+}
+#emotion2 {
+  display: none;
+}
+.iconfont {
+  font-size: 15px !important;
+  color: rgb(2, 200, 255);
+  line-height: 50px;
+  text-align: center;
 }

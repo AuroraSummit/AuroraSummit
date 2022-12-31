@@ -11,10 +11,16 @@ body {
 /*{
   border: 1px solid black;
 }*/
+.shuJu {
+  height: 150px;
+  margin: 0 0 8px;
+  flex: auto;
+}
+
 /*阴影*/
-.yinying {
+.yinYing {
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
-    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 1px 3px 0px;
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 }
 
 .baise {
@@ -53,7 +59,6 @@ body {
 a {
   transition: font-size 0.5s;
   text-decoration: none;
-  color: rgba(0, 255, 255, 0.954);
 }
 .daohang:hover {
   background: rgba(135, 240, 250, 0.484);
@@ -109,7 +114,7 @@ a {
 }
 
 .munu-box:hover {
-  width: 110px;
+  width: 150px;
   height: 550px;
 
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 10px 4px;
@@ -417,9 +422,18 @@ li a:hover::before {
   border-radius: 10px;
   transition: 1s;
 }
-.dengru:hover {
+/*.dengru:hover {
   box-shadow: 0px 3px 20px;
   height: 45px;
+  transition: 0.5s;
+  background-image: linear-gradient(230deg, #5096ff, #8d9eff, #b6a8ff, #f0c1ff);
+}*/
+.lieBiaoXiang {
+  height: 160px;
+}
+a:hover {
+  box-shadow: 0px 3px 20px;
+  height: 50px;
   transition: 0.5s;
   background-image: linear-gradient(230deg, #5096ff, #8d9eff, #b6a8ff, #f0c1ff);
 }
